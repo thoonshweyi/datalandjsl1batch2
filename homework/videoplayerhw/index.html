@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video Player HW</title>
+
+        <link href="../../../dltwdfbatch4/libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css"/>
+        <!-- custome css -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        
+        <h1>Video Player</h1>
+        <div class="video-container">
+            
+            <video src="./video/sorry-JustinBieber.mp4" class="vd" poster="./img/sorryposter.jfif"></video>
+            
+            <div class="vdtimeinfo">
+                <span class="elapse-time">00:00</span>
+                <input type="range" name="progress" id="progress" class="progress" value="0" min="0" max="100" step="1"/>
+                <span class="remaining-time">02:05</span>
+            </div>
+
+            <div class="vdplayicon"><i class="fas fa-play fa-4x"></i></div>
+        </div>
+
+        <div class="controls">
+            
+            <div class="videoinfo">
+                <img src="./img/sorryposter.jfif" alt="sorryposter">
+                <h3>Sorry - Justin Bieber</h3>
+            </div>
+
+            <div class="btngroup">
+                <a href="#" class="controlbtn previousbtn"><i class="fas fa-step-backward"></i></a>
+                <a href="#" class="controlbtn playbtn"><i class="fas fa-play"></i></a>
+                <a href="#" class="controlbtn nextbtn"><i class="fas fa-step-forward"></i></a>
+            </div>
+
+            <div class="quick-setting">
+                <div class="volumecontrols">
+                    <i class="fas fa-volume"></i>
+                    <input type="range" name="volume" id="volume" class="volume"/>
+                </div>
+                
+                <a href="#" class="controlbtn"><i class="fas fa-cog"></i></a>
+                <a href="#" class="controlbtn"><i class="fas fa-expand-wide"></i></a>
+            </div>
+        </div>
+
+        <script src="./js/app.js" type="text/javascript"></script>
+    </body>
+</html>

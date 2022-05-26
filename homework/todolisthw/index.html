@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo List</title>
+        <!-- Materalize css1 js1 -->
+        <link href="./libs/materalize/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <!-- fontawesome css1 -->
+        <link href="../../../dltwdfbatch4/libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css"/>
+        <!-- custome css -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h4>My Todo Lists</h4>
+                        </div>
+                        <div class="card-action">
+                            <div class="input-field">
+                                <label for="filter">Filter Task</label>
+                                <input type="text" name="filter" id="filter" class="filter"/>
+                            </div>
+                            <ul class="task-list">
+                                <!-- <li class="task-list-item"><a href="#"><span class="check"></span> <span>Have to eat</span></a> <a href="#"><i class="fas fa-trash-alt deletebtn"></i></a></li>
+                                <li class="task-list-item complete"><a href="#"><span class="check"></span> <span>Have to cook</span></a> <a href="#"><i class="fas fa-trash-alt deletebtn"></i></a></li> -->
+
+                                <a href="#" class="addtaskbtn"><i class="fas fa-plus"></i>New task</a>
+                            </ul>
+                        </div>
+                    </div>
+                    <form id="taskform" action="" method="">
+                        <div class="input-field task">
+                            <label for="task" id="tasklabel">New Task</label>
+                            <input type="text" name="task" id="task" class="" autocomplete="off"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- Materalize css1 js1 -->
+        <script src="./libs/materalize/materialize.min.js" type="text/javascript"></script>
+        <!-- custome js -->
+        <script src="./js/app.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+1.create song array
+2.intial song index
+3.load song()
+4.play song()
+5.update progress()
+6.set progress()
+7.list play
+8.previous btn / next btn

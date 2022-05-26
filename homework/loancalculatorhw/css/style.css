@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+body{
+    font-family: 'Mulish', sans-serif;
+
+    margin: 0;
+}
+.loanlabels{
+    font-weight: bold;
+    font-size: 18px;
+}
+.dollarsigns,.months{
+    font-size: 18px;
+}
+input[type = 'range']{
+    width: 100%;
+
+    /* for hidden default range */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+
+    
+}
+input[type = 'range']::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+
+    /* position: relative; */
+}
+input[type = 'range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+
+    width: 25px;
+    height: 25px;
+    background-color: rgba(251, 35, 81, 1);
+    border-radius: 50%;
+    margin-top: -7px;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+} 
+
+/* for firefox */
+input[type = 'range']::-moz-range-track{
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type = 'range']::-moz-range-thumb{
+    -moz-appearance: none;
+
+    width: 25px;
+    height: 25px;
+    background-color: rgba(251, 35, 81, 1);
+    border-radius: 50%;
+    margin-top: -7px
+}
+
+/* for ie */
+input[type = 'range']::-ms-range-track{
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type = 'range']::-ms-range-thumb{
+    -ms-appearance: none;
+
+    width: 25px;
+    height: 25px;
+    background-color: rgba(251, 35, 81, 1);
+    border-radius: 50%;
+    margin-top: -7px
+}
+
+.backblues{
+    background-color: navy;
+
+}
+.resultuls{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+}
+.resultlis{
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 18px;
+    padding: 20px 0;
+    border-bottom: 1px groove rgba(251, 35, 81, 0.2);
+}
+.resultlis:last-child{
+    border-bottom: none;
+}
+.apybtns{
+    width: 80%;
+    margin: auto;
+    font-size: 18px !important;
+}

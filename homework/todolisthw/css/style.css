@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+    background-color: rgba(175, 126, 235, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-6{
+    width: 50%;
+
+    margin: auto;
+}
+.card-content{
+    background-color: rgba(175, 126, 235, 1);
+}
+.card{
+    position: relative;
+}
+.card h4{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    
+}
+.task-list-item{
+    color: rgba(175, 126, 235, 1);
+    font-size: 18px;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-list-item a{
+    color: rgba(175, 126, 235, 1) !important;
+    text-transform: none !important;
+    margin: 0 !important;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-list-item.complete a:nth-child(1){
+    text-decoration: line-through;
+}
+.check{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(175, 126, 235, 1);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.task-list-item.complete .check{
+    background-color: rgba(175, 126, 235, 0.7);
+}
+.addtaskbtn{
+    color: #fff !important;
+    font-weight: bold;
+    background-color: rgba(175, 126, 235, 1);
+    border-radius: 50px;
+    padding: 10px 20px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.addtaskbtn i{
+    margin-right: 10px;
+}
+.task{
+    width: 50%;
+    /* background-color: white; */
+    /* padding: 20px; */
+    margin: 50px auto;
+
+    transform: scale(0) rotate(0);
+
+    
+}
+.task.show{
+    animation: myani 0.8s 1 linear forwards;
+}
+#tasklabel{
+    color: #555;
+    font-weight: bold;
+}
+
+@keyframes myani {
+    0%{
+
+    }
+    100%{
+        transform: scale(1) rotate(1turn);
+    }
+}

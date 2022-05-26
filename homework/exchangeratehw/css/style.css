@@ -1,0 +1,87 @@
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    /* background-color: skyblue; */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    /* background-color: red; */
+}
+.container h1{
+    text-align: center;
+    color: navy;
+}
+.container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px auto;
+
+    display: block;
+}
+.container select,.container input{
+    display: block;
+    margin: 10px 0;
+}
+.container select{
+    font-size: 20px;
+    font-weight: 500px;
+    background-color: transparent;
+    padding: 10px 25px;
+    padding-left: 0px;
+    border: 0;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url('../img/downarrow.png');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
+.container input{
+    font-size: 28px;
+    background-color: transparent;
+    color: #555;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+
+    appearance: none;
+}
+input:focus,select:focus{
+    outline: none;
+}
+.swapcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0;
+}
+.swapbtn{
+    text-decoration: none;
+    width: 90px;
+    height: 30px;
+    color: navy;
+    font-size: 20px;
+    background-color: skyblue; 
+    border-radius: 15px;
+
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.rate{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}

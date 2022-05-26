@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Player</title>
+        <link href="../../../dltwdfbatch4/libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css">
+
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        
+        <div class="musicplayer-container">
+
+            <audio src="./audio/background-fashion-sport-party-hiphop_by_watermello_preview.mp3" id="audio" class="audio"></audio>
+
+            <img src="./img/song1.jpg" alt="audio1" id="currentsongimg" class="songimg">
+
+            <div class="songinfo">
+                <h4 id="currentsongname" class="songname">Song Name</h4>
+                <small id="currentsongvocalist" class="vocalist">by Vocalist</small>
+            </div>
+
+            <div class="controls">
+                <button class="controlbtn previousbtn"><i class="fas fa-step-backward"></i></button>
+                <button class="controlbtn playbtn"><i class="fas fa-play"></i></button>
+                <button class="controlbtn nextbtn"><i class="fas fa-step-forward"></i></button>
+            </div>
+
+            <div class="progress">
+                <div class="progressbar"></div>
+                <div class="currentpoint"></div>
+            </div>
+
+            <div class="time">
+                <span class="elapsedtime">00:00</span>
+                <span class="remainingtime">00:00</span>
+            </div>
+
+            <a class="listbtn"><i class="fas fa-list"></i></a>
+
+
+            <div class="songlistcontainer">
+
+                <a href="#" class="backbtn"><i class="fas fa-arrow-left"></i></a>
+                
+                <ul class="songlist">
+                    <!-- <li class="songlist-item">
+                        <div>
+                            <div class="imgcontainer">
+                                <img src="./img/song1.jpg" alt="song1" class="songimg"/>
+                            </div>
+                            <div class="songinfo">
+                                <h4 class="songname">Song Name</h4>
+                                <small class="vocalist">by Vocalist</small>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </li>
+
+                    <li class="songlist-item">
+                        <div>
+                            <div class="imgcontainer">
+                                <img src="./img/song1.jpg" alt="song1" class="songimg"/>
+                            </div>
+                            <div class="songinfo">
+                                <h4 class="songname">Song Name</h4>
+                                <small class="vocalist">by Vocalist</small>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <script src="./js/app.js" type="text/javascript"></script>
+    </body>
+</html>

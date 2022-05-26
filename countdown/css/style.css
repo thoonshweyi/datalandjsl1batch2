@@ -1,0 +1,79 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	/* font-family: sans-serif; */
+	background: url("../img/newyear.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;/*full background*/
+	background-position: center center;
+	height: 100vh;
+	color: #fff;
+
+	display: flex;/*flex display elements left to right*/
+	justify-content: center;
+	align-items: center;
+
+	flex-direction: column;/*flex elements to display as original*/
+
+	margin: 0;
+	overflow: hidden;
+}
+body::after{ /*make body into two layer with after element*/
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	position: absolute;
+	top:0;
+	left: 0;
+
+	z-index: -1;
+}
+h1{
+	font-size: 60px;
+}
+.year{
+	font-size: 200px;
+	opacity: 0.2;
+
+	position: absolute;
+	bottom: 20px;
+
+	left: 50%;
+	transform: translate(-50%);/*move element left again to 50% of its elements*/
+	z-index: -1;
+}
+.countdown{
+	/*display elements in the countdown left to right(display:flex)*/
+	/* display: flex; */
+	transform: scale(2);
+	display: none;
+}
+.time{
+	display: flex;
+	justify-content: center;
+	align-items: center;        /*move elements of time class into center*/
+
+	flex-direction: column;	   /*flex elements to display as original*/
+	margin: 15px;
+}
+.time h2{
+	margin: 0 5px; /*by adding margin from time the total margin is 20px*/
+}
+@media(max-width:500px){/*in mobile size the following code will execute*/
+	h1{
+		font-size: 45px;
+	}
+	.time{
+		margin: 5px;
+	}
+	.time h2{
+		font-size: 12px;
+		margin: 0px;
+	}
+	.time small{
+		font-size: 10px;
+	}
+}

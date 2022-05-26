@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Player Homework</title>
+        <!-- fontawesome css -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link href="../menuslider/libs/fontawesomepro/css/all.min.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Music Player</h1>
+            <div class="playerbox">
+
+                <div class="musicgroup1">
+                    <div class="cd">
+                        <img src="./img/cover1.jpg" alt="songimage"/>
+                    </div>
+                    <div class="musicinfo">
+                        <h2 class="title">Song Title</h2>
+                        <p class="vocal">Vocalist</p>
+                    </div>
+                </div>
+                <audio id='myaudio'></audio>
+                <div class="button">
+                    <button class="player-btn"><i class="far fa-heart"></i></button>
+                    <button class="player-btn"><i class="fas fa-random"></i></button>
+                    <button class="player-btn on"><i class="fas fa-repeat"></i></button>
+                    <button class="player-btn"><i class="fas fa-list-ul"></i></button>
+                </div>
+                <div class="audiobar">
+                    <div class="bar"></div>
+                </div>
+                <div class="button">
+                    <button class="control-btn"><i class="fas fa-step-backward"></i></button>
+                    <button class="control-btn"><i class="fas fa-play"></i></button>
+                    <button class="control-btn"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+            <div class="musiclists">
+                <button id='closebtn'><i class="far fa-times"></i></button>
+                <div class="user">
+                    <img src="./img/profile/user.jpg" alt="userimage"/>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" id='signup'>Sign Up</a></li>
+                        <!-- <li><a href="#">Login</a></li> -->
+                        <li><a href="#">Contact</a></li>
+                        <!-- <li><a href="#">Apps</a></li> -->
+                    </ul>
+                </nav>
+                <div class="listcontainer">
+                    <h2>Music Lists</h2>
+                    <ul class="listcontent"></ul>
+                </div>
+            </div>
+        </div>
+        <!-- Star Modal Area -->
+            <div class="modalcontainer">
+                <div class="modalbox">
+                    <h1>Sign Up</h1>
+                    <p>Register with us to enjoy our services more effciently.</p>
+                    <div class="modalcontent">
+                        <form clas='modalform' action="" method="">
+                            <div class="form-control">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" class="" placeholder="Enter your name"/>
+                            </div>
+                            <div class="form-control">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" class="" placeholder="Enter your email"/>
+                            </div>
+                            <div class="form-control">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" class="" placeholder="Enter your password"/>
+                            </div>
+                            <div class="form-control">
+                                <label for="cfmpassword">Comfirm Password</label>
+                                <input type="password" name="cfmpassword" id="cfmpassword" class="" placeholder="Enter your comfirm password"/>
+                            </div>
+                            <input type="submit" class='submitbtn' value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        <!-- End Modal Area -->
+
+        <script type="text/javascript" src="./js/app.js"></script>
+    </body>
+</html>
